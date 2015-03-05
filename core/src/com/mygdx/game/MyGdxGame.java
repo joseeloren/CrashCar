@@ -3,7 +3,6 @@ package com.mygdx.game;
 import java.util.Iterator;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
@@ -16,8 +15,6 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.TimeUtils;
-
-import javax.swing.Spring;
 
 public class MyGdxGame implements Screen {
     final Drop game;
@@ -62,7 +59,7 @@ public class MyGdxGame implements Screen {
         bucket.height = 64;
 
         // create the raindrops array and spawn the first raindrop
-        raindrops = new Array<Rectangle>();
+        raindrops = new Array<>();
         spawnRaindrop();
 
     }
@@ -79,6 +76,7 @@ public class MyGdxGame implements Screen {
 
     @Override
     public void render(float delta) {
+        //Cambio
         // clear the screen with a dark blue color. The
         // arguments to glClearColor are the red, green
         // blue and alpha component in the range [0,1]
